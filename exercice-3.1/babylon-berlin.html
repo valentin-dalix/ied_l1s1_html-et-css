@@ -1,0 +1,168 @@
+<!--
+**************************************************************************
+Nom         : babylon-berlin.html
+Auteur      : Valentin Dalix
+Date        : 14/11/2026
+Version     : 1.0
+Cours       : HTML & CSS
+Chapitre    : Le HTML Living Std.
+Description : Première page réalisée dans le cadre de l'exercice 2.1
+**************************************************************************
+-->
+
+<!DOCTYPE html>
+
+<!-- Pas du HTML, mais utile pour identifier le langage utilisé. -->
+<!DOCTYPE html>
+<!-- Indique la langue. -->
+<html lang="fr">
+
+<head>
+
+    <!-- Balises essentielles au format HTML -->
+
+    <!-- Indique l'encodage utilisé, à placer en premier par convention. -->
+    <meta charset="UTF-8">
+
+    <!-- Rend le site "responsive", c'est-à-dire adapté aux mobiles et tablettes. À placer en deuxième par convention.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de la page, pour le référencement notamment. -->
+    <title>Babylon Berlin - Historiquement exact ?</title>
+
+    <!-- Description utilisée pour le référencement sur les moteurs de recherche. -->
+    <meta name="description" content="La fin de la saison 5 de Babylon Berlin est-elle historiquement exacte? Quelles sont les thèses soutenues par les historiens aujourd'hui?">
+
+    <!-- Identification de l'auteur. -->
+    <meta name="author" content="Valentin Dalix">
+
+    <!-- Utile uniquement si les arguments sont différents, par exemple pour demander que la page ne soit PAS référencée. -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Identifie quelle est l'adresse "officielle" de la page -->
+    <link rel="canonical" href="http://ied.visiteylix.com/babylon-berlin.html">
+
+    <!-- Balises essentielles au format LD-JSON -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Babylon Berlin - Historiquement exact ?",
+            "description": "La fin de la saison 5 de Babylon Berlin est-elle historiquement exacte? Quelles sont les thèses soutenues par les historiens aujourd'hui?",
+            "author": {
+                "@type": "Person",
+                "name": "Valentin Dalix"
+            },
+            "image": "http://ied.visiteylix.com/images/babylon-berlin_logo.png",
+            "inLanguage": "fr",
+            "mainEntityOfPage": "http://ied.visiteylix.com/babylon-berlin.html",
+            "datePublished": "2026-11-14",
+            "about": {
+                "@type": "TVSeries",
+                "name": "Babylon Berlin"
+            }
+        }
+    </script>
+
+    <!-- Les trois sets suivants sont commentés, ils sont présents uniquement par principe, pour montrer que j'ai bien fait mes recherches... -->
+
+    <!-- Balises optionnelles dites OpenGraph (d'où le "og"), pour le partage sur les réseaux sociaux...
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://ied.visiteylix.com/babylon-berlin.html">
+    <meta property="og:title" content="Babylon Berlin - Historiquement exact ?">
+    <meta property="og:description" content="La fin de la saison 5 de Babylon Berlin est-elle historiquement exacte? Quelles sont les thèses soutenues par les historiens aujourd'hui?">
+    <meta property="og:image" content="http://ied.visiteylix.com/images/babylon-berlin_logo.png">
+    <meta property="og:locale" content="fr_FR">
+    -->
+
+    <!-- Balises optionnelles pour X (Twitter), apparemment inutiles car en leur absence ce sont les balises OG qui sont utilisées...
+    <meta name="twitter:card" content="card">
+    <meta name="twitter:site" content="@jaipastwitterheureusement">
+    <meta name="twitter:title" content="Babylon Berlin - Historiquement exact ?">
+    <meta name="twitter:description" content="La fin de la saison 5 de Babylon Berlin est-elle historiquement exacte? Quelles sont les thèses soutenues par les historiens aujourd'hui?">
+    <meta name="twitter:image" content="http://ied.visiteylix.com/images/babylon-berlin_logo.png">
+    -->
+
+    <!-- Balises optionnelles pour les applications mobiles / web apps (couleur de la barre de navigation sur navigateur mobile / exécution en plein écran sur iOS / couleur de la barre de statut supérieure sur iPhone)...
+    <meta name="theme-color" content="#336699">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    -->
+
+    <!-- Balises inutiles ou obsolètes (la première est inutile car c'est le comportement par défaut de Google, la deuxième est obsolète parce que Google l'ignore.)
+    <meta name="googlebot" content="index, follow">
+    <meta name="keywords" content="word1, word2, word3">
+    -->
+    
+</head>
+
+<body>
+    
+    <h1><cite>Babylon Berlin</cite> : Historiquement exact ?</h1>
+    <img src="images/babylon-berlin_logo.png" height="200" alt="Le logo de la série télévisée Babylon Berlin"> <!-- À priori je devrais gérer la taille avec CSS, mais pour l'instant je garde ça par soucis de lisibilité... -->
+    
+    <div>
+
+        <h2>Présentation de la série.</h2>
+        <p><cite>Babylon Berlin</cite> est une série télévisée allemande en cinq saisons, diffusée pour la première fois en 2017 sur la chaîne Sky Deutschland, et qui a connu son épilogue le 10 septembre 2026. La série suit les aventures de Gereon Rath et Charlotte Ritter, respectivement jeunes inspecteur et sténographe au sein de la police berlinoise, dans les dernières années de la république de Weimar.</p>
+        <figure>
+            <video controls height="200"> <!-- À priori je devrais gérer la taille avec CSS, mais pour l'instant je garde ça par soucis de lisibilité... -->
+                <source src="videos/babylon-berlin_trailer.mp4" type="video/mp4">
+                Trailer de la saison 5 de <cite>Babylon Berlin</cite>.
+            </video>
+            <figcaption>Trailer de la saison 5 de <cite>Babylon Berlin</cite>.</figcaption>
+        </figure>
+        <h3>1929-1931 : le krach boursier, les ravages de la guerre et la fin des années folles.</h3>
+        <p>La capitale allemande est, en 1929, une ville pleine de contrastes : fêtes, cabarets, liberté et modernité y côtoient pauvreté, corruption, violence et montée de l'extrémisme. Les premières saisons de la série illustrent ces contrastes en plaçant ses personnages au cœur des enjeux politiques, sociaux et économiques de l’époque.</p>
+        <p>Gereon Rath est issu d'un milieu relativement aisé (son père est haut fonctionnaire de police dans sa ville d'origine, Cologne) mais c'est aussi un vétéran de la Première Guerre mondiale, traumatisé par les combats et la mort de son frère au front. Tout au long de la série, il sera partagé entre ses convictions personnelles, son sens du devoir et les différentes pressions politiques qui s'exercent sur lui dès son arrivée en poste... tout en devant gérer d'intenses symptômes de stress post-traumatique.</p>
+        <p>Charlotte, quant à elle, est une jeune femme issue du milieu populaire berlinois, en permanence confrontée à la pauvreté et aux inégalités sociales dont elle cherche à s'émanciper grâce à son talent et à sa débrouillardise. C'est aussi une habituée des pistes de danse, dont les nombreuses scènes viennent nous rappeler que les années folles sont aussi des années de libération des mœurs. Elle représente donc cette jeunesse libre et ambitieuse, soucieuse de s'affranchir des normes traditionnelles de l'époque et des contraintes sociales qui pèsent sur elle.</p>
+        <h3>1932-1933 : le bruit des bottes.</h3>
+        <p>La deuxième partie de la série nous plonge cette fois-ci dans le cœur des tensions politiques du début des années 1930. Des journalistes tentant de sonner l'alarme auprès de la population aux nazillons qui peuplent progressivement les rues de Berlin, en passant par la haute bourgeoisie allemande qui essaye de se mettre à l'abri en prêtant allégeance à un futur gouvernement irrespectueux du droit, tous les personnages qui apparaissent au fil des épisodes nous donnent une vision plus globale encore des enjeux de cette période.</p>
+        <p>La dernière saison se concentre sur deux mois d'intense instabilité, janvier et février 1933 : Les oppositions politiques sont de plus en plus réprimées, Adolf Hitler est nommé chancelier le 30 janvier 1933 par le président Hindenburg à la suite de négociations politiques avec les milieux conservateurs (qui pensent pouvoir encadrer et contrôler son gouvernement) et l'incendie du Reichstag (le Parlement allemand), climax final du dernier épisode, est utilisé comme prétexte pour accuser à nouveau les oppositions politiques de trahison.</p>
+    
+    </div>
+    
+    <div>
+
+        <h2>Un épilogue qui pose question...</h2>
+        <h3>L'incendiaire du Reichstag, d'après la série... et un questionnement qui apparaît.</h3>
+        <p>Cet épilogue, je l'ai découvert il y a quelques jours, et il m'a posé question.</p>
+        <p>Dans la série, un personnage appelé Marinus van der Lubbe, syndicaliste néerlandais, proche du parti communiste mais dont il réprouve le manque d'actions fermes et violentes, est filmé tentant de mettre le feu à plusieurs bâtiments publics les jours précédant l'incendie du Parlement allemand. Il est aussi filmé en train d'être approché par des hommes identifiés comme appartenant au parti nazi et qui semblent réussir à profiter de ses capacités intellectuelles visiblement limitées afin de le manipuler et de le convaincre de mettre le feu au Reichstag. On le voit entrer par effraction dans le bâtiment et tenter d'y mettre maladroitement le feu, mais c'est au final une unité S.A. (la milice paramilitaire nazie) qui vient déclencher l'incendie. Marinus van der Lubbe sera arrêté, utilisé comme bouc émissaire, puis condamné par une loi rétroactive à la guillotine et exécuté en 1934.</p>
+        <figure>
+            <img src="images/incendie-reichstag.jpeg" height="200" alt="Photographie du Reichstag en feu en février 1933."> <!-- À priori je devrais gérer la taille avec CSS, mais pour l'instant je garde ça par soucis de lisibilité... -->
+            <figcaption>Photographie du Reichstag en feu en février 1933.</figcaption>
+        </figure>
+        <p>Devant ces scènes, d'anciens souvenirs de cours me remontent : s'il est factuellement correct d'affirmer que les nazis et le pouvoir en place ont utilisé cet incendie comme prétexte pour lancer une vague de répression sans précédent dans le pays (contre la presse, les opposants politiques, les Juifs...), est-il historiquement correct que cet incendie a bien été déclenché par la milice nazie d'Hitler, ou est-ce un choix délibéré des auteurs que de prendre position?</p>
+        <h3>Alors... qu'en est-il réellement ?</h3>
+        <p>Eh bien il se trouve... qu'il n'existe encore aujourd'hui pas de consensus historique, l'enquête n'ayant pas pu être menée à son terme au vu du contexte politique. Trois thèses prédominantes se sont partagées le devant de la scène:</p>
+        <ul>
+            <li>La thèse de l'acte isolé : Marinus van der Lubbe aurait agi seul et sans aide extérieure. C'est la thèse qui a le plus longtemps été défendue dans l'historiographie allemande, notamment par le fonctionnaire Fritz Tobias et l'historien Hans Mommsen.</li>
+            <li>La thèse du complot nazi (celle retenue dans la série) : Certains témoignages et récits de l'époque ont évoqué une participation de membres des SA ou d'autres responsables nazis et la rapidité de la réaction politique et policière a alimenté les soupçons d'une opération préparée à l'avance. Si elle a été défendue par des chercheurs et par les opposants politiques de l'époque, aucune preuve formelle n'a permis d'établir la véracité de cette thèse et elle a été abandonnée.</li>
+            <li>La thèse de la manipulation : Marinus van der Lubbe aurait agi seul le soir de l'incendie mais après avoir été manipulé et avoir obtenu de l'aide de tiers inconnus... tiers qui voyaient dans cet incendie un intérêt politique évident. De la même manière, cette thèse semble aujourd'hui avoir été abandonnée.</li>
+        </ul>
+
+    </div>
+    
+    <div>
+
+        <h2>Sources pour les recherches</h2>           
+        <ul>
+            <li><a href="https://enseignants.lumni.fr/fiche-media/00000000884/l-incendie-du-reichstag-muet.html">https://enseignants.lumni.fr/fiche-media/00000000884/l-incendie-du-reichstag-muet.html</a></li>
+            <li><a href="https://www.radiofrance.fr/franceinfo/podcasts/les-infox-de-l-histoire/episode-6-berlin-27-fevrier-1933-l-incendie-du-reichstag-la-fin-de-la-democratie-en-allemagne-2055409">https://www.radiofrance.fr/franceinfo/podcasts/les-infox-de-l-histoire/episode-6-berlin-27-fevrier-1933-l-incendie-du-reichstag-la-fin-de-la-democratie-en-allemagne-2055409</a></li>
+            <li><a href="https://www.lechappee.org/actualites/comment-un-historien-francais-specialiste-du-nazisme-parle-de-marinus-van-der-lubbe">https://www.lechappee.org/actualites/comment-un-historien-francais-specialiste-du-nazisme-parle-de-marinus-van-der-lubbe</a></li>
+            <li><a href="https://www.sophiahistorica.com/article/incendie-reichstag-question-ouverte-abus">https://www.sophiahistorica.com/article/incendie-reichstag-question-ouverte-abus</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Incendie_du_Reichstag">https://fr.wikipedia.org/wiki/Incendie_du_Reichstag</a></li>
+        </ul>
+
+        <h2>Sources des documents affichés</h2>          
+        <ul>
+            <li>Logo de la série: <a href="https://fr.wikipedia.org/wiki/Babylon_Berlin">https://fr.wikipedia.org/wiki/Babylon_Berlin</a></li>
+            <li>Trailer de la saison 5: <a href="https://www.youtube.com/watch?v=LG18iGQ_jdg">https://www.youtube.com/watch?v=LG18iGQ_jdg</a></li>
+            <li>Photographie du Reichstag: <a href="https://www.ina.fr/ina-eclaire-actu/reichstag-berlin-incendie-histoire-proces-27-fevrier-1933">https://www.ina.fr/ina-eclaire-actu/reichstag-berlin-incendie-histoire-proces-27-fevrier-1933</a></li>
+        </ul>
+
+    </div>
+    
+</body>
+
+</html>
